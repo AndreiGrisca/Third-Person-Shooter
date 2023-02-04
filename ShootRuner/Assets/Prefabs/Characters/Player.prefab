@@ -1444,7 +1444,7 @@ GameObject:
   - component: {fileID: 1082056648645887720}
   - component: {fileID: 1082056648645887716}
   m_Layer: 8
-  m_Name: PlayerOriginal
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1553,6 +1553,9 @@ MonoBehaviour:
   BottomClamp: -30
   CameraAngleOverride: 0
   LockCameraPosition: 0
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
 --- !u!114 &6820773447218030284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1588,6 +1591,9 @@ MonoBehaviour:
   sprint: 0
   aim: 0
   shoot: 0
+  hotKey1: 0
+  hotKey2: 0
+  hotKey3: 0
   analogMovement: 0
   cursorLocked: 1
   cursorInputForLook: 1
@@ -1702,11 +1708,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f46a1c9b15889ea409065fcd7aa73470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animLayer: {fileID: 1082056648049814334}
   aimVirtualCamera: {fileID: 0}
   aimColLayerMask:
     serializedVersion: 2
     m_Bits: 1
+  PosGan: {fileID: 0}
+  PosPistol: {fileID: 0}
+  PosRifle: {fileID: 0}
+  aimPosPistol: {fileID: 0}
+  aimPosRifle: {fileID: 0}
+  aimPosGan: {fileID: 0}
 --- !u!114 &1082056648645887716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3647,12 +3658,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starterAssetsInputs: {fileID: 1073670062330990656}
   hitEfect: {fileID: 0}
+  hitEfectBlood: {fileID: 0}
   muzzlef: {fileID: 992051817954242098}
   aimColLayerMask:
     serializedVersion: 2
     m_Bits: 1
+  _ammo: {fileID: 0}
   damage: 15
-  fireRate: 1.5
   shootSFX: {fileID: 8300000, guid: 72f526a6a9890f643a88e85a61c86c8a, type: 3}
   _audioSource: {fileID: 1082056647684505181}
   curentAmmo: 30
