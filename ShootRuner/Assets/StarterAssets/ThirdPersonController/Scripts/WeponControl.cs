@@ -1,7 +1,7 @@
 using System.Collections;
 using StarterAssets;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class WeponControl : MonoBehaviour
 {
@@ -52,15 +52,13 @@ public class WeponControl : MonoBehaviour
                     _audioSource.PlayOneShot(shootSFX);
                     if (hitTransform.CompareTag("Shootable"))
                     {
-                        Debug.Log(hitTransform);
-                        hitTransform.parent.parent.GetComponent<AiNavMesh>().TakeDamage(damage);
+                        hitTransform.parent.parent.GetComponent<Enemy>().TakeDamage(damage);
                        Instantiate(hitEfectBlood, raycastHit.point, Quaternion.identity);
                        
                     }
                     else
                     {
                       Instantiate(hitEfect, raycastHit.point, Quaternion.identity);
-                        Debug.Log(hitTransform);
                     }
                         
                 }

@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 2634495999008408663}
   - component: {fileID: 2634495999008408660}
   m_Layer: 5
-  m_Name: Winer (1)
+  m_Name: Winer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

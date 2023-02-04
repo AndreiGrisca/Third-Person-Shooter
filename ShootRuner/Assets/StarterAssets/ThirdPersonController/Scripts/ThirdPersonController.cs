@@ -407,8 +407,12 @@ namespace StarterAssets
         public void TakeDamage(int damage)
         {
             currentHealth -= damage;
-
             healthBar.SetHealth(currentHealth);
+            
+            if (currentHealth <= 0)
+            {
+                  UIManager.uiManager.Lose();  
+            }
         }
         
 

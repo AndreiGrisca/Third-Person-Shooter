@@ -1,34 +1,41 @@
+using System;
 using StarterAssets;
-using UnityEngine;
-using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine;
+
 public class GameManager : MonoBehaviour
 {
+    public static GameManager gameManager;
+    
     [SerializeField] private TextMeshProUGUI currentEnemy;
-    [SerializeField] private ThirdPersonController _personController;
-    public MainMeniu mainMeniu;
-    public GameObject[] countEnemy;
+    private int currentEnemeyNumber = 0;
+    private int maxKills = 5;
 
     private void Awake()
     {
-        mainMeniu = GetComponent<MainMeniu>();
+        gameManager = this;
+        UpdateText();
     }
 
-    void Update()
+    private void OnDestroy()
     {
-        countEnemy = GameObject.FindGameObjectsWithTag("Enemy");
-        currentEnemy.text = "CurentEnemy" + countEnemy.Length;
-        if (countEnemy.Length==0)
+        gameManager = null;
+    }
+
+    public void IncreaseScore()
+    {
+        currentEnemeyNumber++;
+        UpdateText();
+
+        if (currentEnemeyNumber >= maxKills)
         {
-            SceneManager.LoadScene("Meniu");
-            mainMeniu = GetComponent<MainMeniu>();
-            mainMeniu.Win();
-        }
-        if (_personController.currentHealth == 0)
-        {
-            SceneManager.LoadScene("Meniu");
-            mainMeniu = GetComponent<MainMeniu>();
-            mainMeniu.Lose();
+            UIManager.uiManager.Win();
         }
     }
+    
+    private void UpdateText()
+    {
+        currentEnemy.text = "Kills: " + currentEnemeyNumber;
+    }
+  
 }

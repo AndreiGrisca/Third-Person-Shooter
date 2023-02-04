@@ -1,6 +1,7 @@
 using StarterAssets;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
+
 public class SwichWepons : MonoBehaviour
 {
     private float animDuration;

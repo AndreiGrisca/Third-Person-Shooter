@@ -8,10 +8,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Scripts/AiNavMesh.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Scripts/MainMeniu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Scripts/SwichWepons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Shoot_3D/Assets/Invector-3rdPersonController_LITE/Scripts/CharacterController/vThirdPersonController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Scripts/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Scripts/SwichWepons.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -104,6 +104,7 @@
       <workItem from="1675432090633" duration="11217000" />
       <workItem from="1675497714233" duration="6347000" />
       <workItem from="1675504798447" duration="3903000" />
+      <workItem from="1675518565255" duration="4268000" />
     </task>
     <servers />
   </component>
