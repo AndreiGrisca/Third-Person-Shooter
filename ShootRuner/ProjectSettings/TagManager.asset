@@ -11,15 +11,15 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - ui1
   - Water
   - UI
   - UI1
-  - 
+  - Player
   - Lighting
   - Ground
   - Postprocessing
-  - 
+  - Obstacle
   - 
   - 
   - 

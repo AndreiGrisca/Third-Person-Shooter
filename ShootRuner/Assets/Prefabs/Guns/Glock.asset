@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5764e04f030784dada333b577fb3b3, type: 3}
+  m_Name: Glock
+  m_EditorClassIdentifier: 
+  wepon: {fileID: 7565611982445892001, guid: 9ddc8eea8fb87d14d917e5f7d999c72a, type: 3}
+  hitEfect: {fileID: 613433886817584984, guid: 4cdf60d55dd470e4dac4e6ad5abcf23f, type: 3}
+  hitEfectBlood: {fileID: 613433886817584984, guid: b5eee796decda034480547dfe84cd259,
+    type: 3}
+  bullet: {fileID: 0}
+  damge: 10
+  ammo: 12
+  currentAmmo: 12
+  reload: 3
+  shootSFX: {fileID: 0}
+  _audioSource: {fileID: 0}
